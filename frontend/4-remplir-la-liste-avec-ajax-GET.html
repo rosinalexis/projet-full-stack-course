@@ -125,7 +125,8 @@
     function deleteItem(element) {
       let id = element.getAttribute("data-id");
 
-      if (confirm("voulez-vous vraiment supprimer l'element " + id + " ?")) {
+      if (confirm("voulez-vous vraiment supprimer l'element " + id + " ?")) 
+      {
         let url2 = url + "/" + id;
         console.log(url2);
         axios.delete(url2).then((response) => {
